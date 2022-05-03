@@ -1,0 +1,23 @@
+
+.benefit {
+    padding-bottom: 0px;
+    --card-item: 4;
+
+    &__item-title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--main-font-color);
+        margin-bottom: 10px;
+    }
+    &__icon-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: var(--secondary-background-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+}
+

@@ -1,0 +1,82 @@
+.footer {
+    background-color: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+    &__titel {
+        color: var(--font-color-dark-theme);
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 70px;
+    }
+    
+    &__item:last-child {
+        margin-left: auto;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    &__address {
+        display: flex;
+        font-style: inherit;
+    }
+    &__address-link {
+            color: var(--font-color-address);
+            transition: color var(--transition);
+    
+            &[target="_blank"] {
+                color: var(--font-color-dark-theme);
+            }
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+    
+    &__address-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    &__subscribe-form {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__form-input {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        width: 360px;
+        height: 50px;
+        background-color: transparent;
+        padding: 15px;
+        color: var(--font-color-dark-theme);
+        margin-right: 10px;
+    
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    .social-list__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
+    .model-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
