@@ -525,7 +525,7 @@ img {
     display: none;
   }
   .header__container {
-    min-height: 60px;
+    height: 60px;
     justify-content: space-between;
   }
   .header__contact-list {

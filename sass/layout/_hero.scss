@@ -2,9 +2,6 @@
     background-color: var(--primary-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/background-img.jpg);
     background-size: cover;
 
     &__title {
@@ -20,4 +17,39 @@
         margin-left: auto;
         margin-bottom: 30px;
     }
+
+    @media screen and (max-width: 1199px) {
+        &__title {
+            font-size: 26px;
+            line-height: 1.62;
+            max-width: 360px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+        }
+    }
+        
+  @media screen and (max-width: 767px) {
+   & {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/background-mobile.jpg);
+
+    }
+ } 
+   @media screen and (min-width: 768px) {
+    & {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/background-tablet.jpg);
+    }
+ }
+  @media screen and (min-width: 768px) {
+    & {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/background-img.jpg);
+    }
+}
+
 }
