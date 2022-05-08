@@ -1,5 +1,5 @@
 .header {
-    // border: 1px solid #ececec;
+    border: 1px solid #ececec;
     position: relative;
 
   &__container {
@@ -63,6 +63,9 @@
         &__contact-item:not(:last-child) {
           margin-bottom: 10px;
         }
+        &__contact-item:last-child {
+          padding-right: 15px;
+        }
 
         &__contact-list {
           display: flex;
@@ -119,15 +122,3 @@
     }
 }
 
-   
-    // &__nav-icon {
-    //     fill: currentColor;
-    //     margin-right: 10px;
-    // }
-//     
-//     }
-    
-//     &__nav-item:not(:last-child) {
-//         margin-right: 50px;
-//     }
-    

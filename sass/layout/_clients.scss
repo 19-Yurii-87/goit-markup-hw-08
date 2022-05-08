@@ -1,5 +1,4 @@
 .clients {
-    --card-item: 6;
 
   &__link {
     display: flex;
@@ -20,6 +19,18 @@
   &__icon {
     fill: currentColor;
     }
+
+  @media screen and (max-width: 767px) {
+    --card-item: 2;
+  }
+  
+  @media screen and (min-width: 768px) {
+    --card-item: 3;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    --card-item: 6;
+  }
 }
 
 
