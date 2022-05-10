@@ -124,6 +124,7 @@
         align-items: center;
     
         &::before {
+            flex-shrink: 0;
             display: inline-block;
             width: 16px;
             height: 15px;

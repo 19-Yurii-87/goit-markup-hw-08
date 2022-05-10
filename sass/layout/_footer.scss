@@ -21,6 +21,7 @@
     &__address {
         display: flex;
         font-style: inherit;
+        justify-content: center;
     }
     &__address-link {
             color: var(--font-color-address);
@@ -87,7 +88,8 @@
     }
     
     &__form-input {
-        width: 450px;
+        max-width: 450px;
+        width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -103,6 +105,9 @@
     }
 
     @media screen and (max-width: 767px) {
+        &__item {
+            width:100%;
+        }
         &__item:not(:last-child) {
             margin-bottom: 60px;
         }
@@ -125,6 +130,10 @@
         }
         &__item:first-child {
             margin-right: 165px;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 1199px) {
+        &__item:first-child {
             margin-bottom: 60px;
         }
     }

@@ -1,5 +1,5 @@
 .menu {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color:var(--font-color-dark-theme);
@@ -18,6 +18,9 @@
         visibility: visible;
         pointer-events: auto;
         transform: translateY(0%);
+    }
+    &__wrapper {
+        margin-top: auto;
     }
 
 
@@ -38,14 +41,18 @@
 
     }
     &__container {
+        display: flex;
+        flex-direction: column;
         position: relative;
         padding-left: 40px;
+        padding-right: 20px;
         padding-top: 48px;
         padding-bottom: 48px;
+        height: 100%;
 
-        &.container {
-            width: auto;
-        }
+        // &.container {
+        //     width: auto;
+        // }
     }
     &__nav-link {
         font-weight: 500;
@@ -66,9 +73,9 @@
     &__nav-list {
         color: #212121;
     } 
-    &__nav {
-        margin-bottom: 300px;
-    }
+    // &__nav {
+    
+    // }
     &__contact-link {
         font-weight: 500;
         font-size: 34px;
@@ -96,6 +103,13 @@
     }
     &__social-list {
         display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-top: -10px;
+    }
+    &__social-item {
+        margin-left: 5px;
+        margin-top: 10px;
     }
     &__social-item:not(:last-child) ::after {
         width: 22px;

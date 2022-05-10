@@ -53,7 +53,7 @@
         </div>
 
         <div class="menu" data-menu>
-            <div class="menu__container container">
+            <div class="menu__container">
             <button type="button" class="menu__close-btn" data-menu-close>
                 <svg class="menu__icon-close" width="40" height="40">
                     <use href="./img/sprite.svg#icon-close"></use>
@@ -72,6 +72,7 @@
                     </li>
                 </ul>
             </nav>
+            <div class="menu__wrapper">
             <ul class="menu__contact-list list">
                 <li class="menu__contact-item">
                     <a class="menu__contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -95,6 +96,7 @@
               </li>
 
             </ul>
+            </div>
             </div>
         </div>
     </header>
@@ -155,7 +157,7 @@
                 <li class="work__item card-set__item"> 
                     <picture>
                         <source srcset="./img/img.webp 1x, ./img/img@2x.webp 2x" type="image/webp"/>
-                        <source srcset="./img/img.jpg 1x, ./img/img@2x.jpg 2x"/>
+                        <source srcset="./img/img.jpg 1x, ./img/img@2x.jpg 2x" type="image/jpg"/>
                         <img src="./img/img.jpg" alt="разработка сайтов" width="370" height="294">
                     </picture>
                      <p class="work__description">Десктопные приложения</p>
@@ -163,7 +165,7 @@
                 <li class="work__item card-set__item"> 
                     <picture>
                         <source srcset="./img/img-1.webp 1x, ./img/img-1@2x.webp 2x" type="image/webp" />
-                        <source srcset="./img/img-1.jpg 1x, ./img/img-1@2x.jpg 2x" />
+                        <source srcset="./img/img-1.jpg 1x, ./img/img-1@2x.jpg 2x" type="image/jpg"/>
                         <img src="./img/img-1.jpg" alt="разработка мобильных приложений" width="370" height="294">
                     </picture>
                     <p class="work__description">Мобильные приложения</p>
@@ -171,7 +173,7 @@
                 <li class="work__item card-set__item"> 
                     <picture>
                         <source srcset="./img/img-2.webp 1x, ./img/img-2@2x.webp 2x" type="image/webp" />
-                        <source srcset="./img/img-2.jpg 1x, ./img/img-2@2x.jpg 2x" />
+                        <source srcset="./img/img-2.jpg 1x, ./img/img-2@2x.jpg 2x" type="image/jpg"/>
                         <img src="./img/img-2.jpg" alt="подбор дизайнерских решений" width="370" height="294">
                     </picture>
                     <p class="work__description">Дизайнерские решения</p>
@@ -189,9 +191,9 @@
                     <source srcset="./img/team-photo-tablet-1.webp 1x, ./img/team-photo-tablet-1@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
                     <source srcset="./img/team-photo-mobile-1.webp 1x, ./img/team-photo-mobile-1@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
                     <source srcset="./img/team-photo-1.jpg 1x, ./img/team-photo-1@2x.jpg 2x"
-                    media="(min-width: 1200px)"/>
-                    <source srcset="./img/team-photo-tablet-1.jpg 1x, ./img/team-photo-tablet-1@2x.jpg 2x" media="(min-width: 768px)"/>
-                    <source srcset="./img/team-photo-mobile-1.jpg 1x, ./img/team-photo-mobile-1@2x.jpg 2x" media="(max-width: 767px)"/>
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source srcset="./img/team-photo-tablet-1.jpg 1x, ./img/team-photo-tablet-1@2x.jpg 2x" media="(min-width: 768px)" type="image/jpg"/>
+                    <source srcset="./img/team-photo-mobile-1.jpg 1x, ./img/team-photo-mobile-1@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
                     <img src="./img/team-photo-1.jpg" alt="Игорь Демьяненко" width="270" height="260"/>
                     </picture>
                    
@@ -238,9 +240,9 @@
                             type="image/webp" />
                         <source srcset="./img/team-photo-mobile-2.webp 1x, ./img/team-photo-mobile-2@2x.webp 2x" media="(max-width: 767px)"
                             type="image/webp" />
-                        <source srcset="./img/team-photo-2.jpg 1x, ./img/team-photo-2@2x.jpg 2x" media="(min-width: 1200px)" />
-                        <source srcset="./img/team-photo-tablet-2.jpg 1x, ./img/team-photo-tablet-2@2x.jpg 2x" media="(min-width: 768px)" />
-                        <source srcset="./img/team-photo-mobile-2.jpg 1x, ./img/team-photo-mobile-2@2x.jpg 2x" media="(max-width: 767px)" />
+                        <source srcset="./img/team-photo-2.jpg 1x, ./img/team-photo-2@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg"/>
+                        <source srcset="./img/team-photo-tablet-2.jpg 1x, ./img/team-photo-tablet-2@2x.jpg 2x" media="(min-width: 768px)" type="image/jpg"/>
+                        <source srcset="./img/team-photo-mobile-2.jpg 1x, ./img/team-photo-mobile-2@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
                     <img src="./img/team-photo-2.jpg" alt="Ольга Репина" width="270" height="260">
                     </picture>
                     <div class="team__photo-description">
@@ -286,9 +288,9 @@
                             type="image/webp" />
                         <source srcset="./img/team-photo-mobile-3.webp 1x, ./img/team-photo-mobile-3@2x.webp 2x" media="(max-width: 767px)"
                             type="image/webp" />
-                        <source srcset="./img/team-photo-3.jpg 1x, ./img/team-photo-3@2x.jpg 2x" media="(min-width: 1200px)" />
-                        <source srcset="./img/team-photo-tablet-3.jpg 1x, ./img/team-photo-tablet-3@2x.jpg 2x" media="(min-width: 768px)" />
-                        <source srcset="./img/team-photo-mobile-3.jpg 1x, ./img/team-photo-mobile-3@2x.jpg 2x" media="(max-width: 767px)" />
+                        <source srcset="./img/team-photo-3.jpg 1x, ./img/team-photo-3@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg"/>
+                        <source srcset="./img/team-photo-tablet-3.jpg 1x, ./img/team-photo-tablet-3@2x.jpg 2x" media="(min-width: 768px)" type="image/jpg"/>
+                        <source srcset="./img/team-photo-mobile-3.jpg 1x, ./img/team-photo-mobile-3@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
                         <img src="./img/team-photo-3.jpg" alt="Николай Тарасов" width="270" height="260">
                     </picture>                    
                     <div class="team__photo-description">
@@ -334,9 +336,9 @@
                             type="image/webp" />
                         <source srcset="./img/team-photo-mobile-4.webp 1x, ./img/team-photo-mobile-4@2x.webp 2x" media="(max-width: 767px)"
                             type="image/webp" />
-                        <source srcset="./img/team-photo-4.jpg 1x, ./img/team-photo-4@2x.jpg 2x" media="(min-width: 1200px)" />
-                        <source srcset="./img/team-photo-tablet-4.jpg 1x, ./img/team-photo-tablet-4@2x.jpg 2x" media="(min-width: 768px)" />
-                        <source srcset="./img/team-photo-mobile-4.jpg 1x, ./img/team-photo-mobile-4@2x.jpg 2x" media="(max-width: 767px)" />
+                        <source srcset="./img/team-photo-4.jpg 1x, ./img/team-photo-4@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg"/>
+                        <source srcset="./img/team-photo-tablet-4.jpg 1x, ./img/team-photo-tablet-4@2x.jpg 2x" media="(min-width: 768px)" type="image/jpg"/>
+                        <source srcset="./img/team-photo-mobile-4.jpg 1x, ./img/team-photo-mobile-4@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
                         <img src="./img/team-photo-4.jpg" alt="Михаил Ермаков" width="270" height="260">
                     </picture>                  
                     <div class="team__photo-description">
@@ -537,7 +539,7 @@
                 </div>
                 <div class="modal__checkbox-wrapper">
                     <input type="checkbox" class="modal__checkbox visually-hidden" id=checkbox name="contract_conditions" required>
-                    <label for="checkbox" class="modal__checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp; <a href="">Условия договорa</a>
+                    <label for="checkbox" class="modal__checkbox-label"><span>Соглашаюсь с рассылкой и принимаю&nbsp; <a href="">Условия договорa</a><span/>
                     <svg class="modal__icon-check" width="16" height="15">
                      <use href="./img/sprite.svg#icon-check" ></use>
                     </svg>

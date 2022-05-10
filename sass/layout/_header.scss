@@ -63,14 +63,12 @@
         &__contact-item:not(:last-child) {
           margin-bottom: 10px;
         }
-        &__contact-item:last-child {
-          padding-right: 15px;
-        }
-
         &__contact-list {
           display: flex;
           flex-wrap: wrap;
-          justify-content: flex-end;
+          justify-content: flex-start;
+          max-width: 20%;
+          margin-left: auto;
         }
         &__contact-link {
           display: flex;
