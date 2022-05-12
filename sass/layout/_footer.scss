@@ -119,6 +119,10 @@
         &__address-link {
             text-align: center;
         }
+        &__form-input {
+        max-width: 450px;
+        width: 100%;
+    }
         
     }
 
@@ -136,6 +140,8 @@
         &__item:first-child {
             margin-bottom: 60px;
         }
+        &__form-input {
+        width: 450px;
     }
     @media screen and (min-width: 1200px) {
 
@@ -147,4 +153,5 @@
         margin-left: auto;
         }
     }  
+}
 }
